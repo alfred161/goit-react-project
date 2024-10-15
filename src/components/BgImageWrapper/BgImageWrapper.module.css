@@ -1,0 +1,13 @@
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.image {
+  width: 611px;
+  height: 568px;
+  background: url(../../images/bg.png) no-repeat;
+  /*background-size: cover;*/
+  background-position: center;
+}

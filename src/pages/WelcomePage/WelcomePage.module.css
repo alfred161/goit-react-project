@@ -1,0 +1,39 @@
+.expenseLog,
+.description {
+  color: var(--GREY);
+}
+.expenseLog {
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 2.5px;
+  margin: 0 auto 10px;
+}
+
+.manageFinance {
+  max-width: 575px;
+  color: #fafafa;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.manageFinance span {
+  color: var(--MINT-GREEN);
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 568px;
+}
+
+.description {
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  line-height: 1.2;
+}
