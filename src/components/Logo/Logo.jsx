@@ -1,11 +1,20 @@
-import css from '../Logo/Logo.module.css';
-import icon from '../../images/logo.svg';
+import { useNavigate } from 'react-router-dom';
+import icon from '../../images/icons.svg';
+import css from './Logo.module.css';
+
 const Logo = props => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/transactions/expense');
+  };
   return (
-    <h1 className={css.logoText}>
-      <img src={icon} className={css.icon} alt=""></img>
-      EXPENSETRACKER
-    </h1>
+    <li className={css.container} onClick={handleClick}>
+      <svg className={css.icon} width="27" height="16">
+        <use href={`${icon}#logo`} />
+      </svg>
+      <h1 className={`${css.logo} bold`}>EXPENSETRACKER</h1>
+    </li>
   );
 };
 

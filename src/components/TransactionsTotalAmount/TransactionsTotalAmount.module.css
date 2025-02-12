@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.balanceBox {
+  width: 303px;
+  height: 121px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--GREY-BOX);
+  gap: 22px;
+}
+
+.balanceTrendIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  width: 43px;
+  height: 43px;
+  background-color: var(--MINT-GREEN);
+}
+
+.icon {
+  align-content: center;
+}
+
+.yourBalance {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  color: var(--GREY-TEXT);
+}
+
+.balance {
+  color: var(--GREY-TEXT-DARKER);
+}
+
+.balancePercent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 48px;
+  font-size: 12px;
+  color: var(--MINT-GREEN-TEXT);
+}
+
+.balancePercent h4 {
+  background-color: var(--MINT-GREEN-BACKGROUND);
+  border-radius: 13px;
+  padding: 4px 8px;
+}
+
+.balanceAmount {
+  width: 60%;
+}
+
+.total {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--WHITE-A5);
+  margin-bottom: 10px;
+}
+
+.incomeBalance, .expenseBalance {
+  font-size: 24px;
+  font-weight: 700;
+}

@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.avatarList {
+  display: flex;
+  flex-direction: row;
+  margin-right: 8px;
+}
+
+.avatarList img {
+  border-radius: 50%;
+  border: 2px solid var(--BLACK);
+  overflow: hidden;
+  background-color: var(--WHITE);
+}
+
+.userContainer h2 {
+  color: var(--WHITE);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  margin-bottom: 12px;
+}
+
+.userContainer p {
+  width: 210px;
+  color: var(--GREY);
+  font-size: 16px;
+  font-style: normal;
+}

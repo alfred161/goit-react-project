@@ -1,0 +1,105 @@
+.main {
+  flex-basis: 566px;
+}
+
+.form {
+  height: 80vh;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--GREY-BOX);
+  padding: 40px;
+}
+
+.transactionType {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.radioGroup {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 20px;
+}
+
+.radioGroup input {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.radioGroup:hover input ~ .radio {
+  background-color: #ccc;
+}
+
+.radioGroup input:checked ~ .radio {
+  background-color: var(--MINT-GREEN);
+}
+
+.radio:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.radioGroup input:checked ~ .radio:after {
+  display: block;
+}
+
+.radioGroup .radio:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.dateTimeGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.dateGroup input {
+  width: 242px;
+}
+
+.timeGroup input {
+  width: 224px;
+}
+
+.inputField {
+  display: grid;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}

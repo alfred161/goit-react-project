@@ -1,25 +1,32 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { persistReducer, persistStore } from 'redux-persist';
+import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import { authReducer } from './auth/authSlice';
-import { contactsSlice } from './contacts/contactsSlice';
-import { filterSlice } from './filter/filterSlice';
+import { categoriesReducer } from './categories/categoriesSlice';
+import { transactionsReducer } from './transactions/transactionsSlice';
+import { filterReducer } from './filterSlice';
+import { userReducer } from './user/userSlice';
 
+// Persisting token field from auth slice to localstorage
 const authPersistConfig = {
   key: 'auth',
   storage,
-  whitelist: ['token'],
+  whitelist: ['token', 'refreshToken', 'sid', 'user'],
 };
 
 export const store = configureStore({
   reducer: {
     auth: persistReducer(authPersistConfig, authReducer),
-    contacts: contactsSlice.reducer,
-    filter: filterSlice.reducer,
+    user: userReducer,
+    categories: categoriesReducer,
+    transactions: transactionsReducer,
+    filter: filterReducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
-      serializableCheck: false,
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
     }),
 });
 

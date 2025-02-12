@@ -1,0 +1,23 @@
+.main {
+  flex-basis: 630px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.expenseLog {
+  font-size: 38px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.description {
+  color: var(--WHITE-A4);
+  font-size: 16px;
+  font-weight: 400;
+}

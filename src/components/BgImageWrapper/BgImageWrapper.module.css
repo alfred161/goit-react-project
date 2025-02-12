@@ -1,13 +1,8 @@
-.imageContainer {
-  display: flex;
-  justify-content: center;
+.main {
+  flex-basis: calc(((100% - 44px) / 2) + 2.5%);
   position: relative;
 }
 
-.image {
-  width: 611px;
-  height: 568px;
-  background: url(../../images/bg.png) no-repeat;
-  /*background-size: cover;*/
-  background-position: center;
+.hero {
+  max-width: 611px;
 }

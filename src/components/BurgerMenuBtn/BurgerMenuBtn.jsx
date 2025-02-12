@@ -1,8 +1,10 @@
 
 const BurgerMenuBtn = props => {
-  return <div>BurgerMenuBtn</div>;
-};
+  return (
+    <div>BurgerMenuBtn</div>
+  )
+}
 
-BurgerMenuBtn.propTypes = {};
+BurgerMenuBtn.propTypes = {}
 
-export default BurgerMenuBtn;
+export default BurgerMenuBtn

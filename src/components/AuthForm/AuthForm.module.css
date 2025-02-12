@@ -1,0 +1,60 @@
+.pwGroup {
+  position: relative;
+}
+
+.pwGroup svg {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.haveAccount {
+  font-size: 12px;
+  color: var(--GREY);
+}
+
+.haveAccount .sign {
+  color: var(--WHITE);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.inputField {
+  width: 399px;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--GREY-BORDER);
+  border-radius: 12px;
+  color: var(--WHITE);
+  width: 399px;
+}
+
+.inputGroup input {
+  width: 90%;
+  padding: 14px 18px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: var(--WHITE);
+  caret-color: var(--WHITE);
+}
+
+.inputGroup svg {
+  cursor: pointer;
+}

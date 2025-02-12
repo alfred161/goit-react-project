@@ -1,8 +1,10 @@
 
 const UserSetsModal = props => {
-  return <div>UserSetsModal</div>;
-};
+  return (
+    <div>UserSetsModal</div>
+  )
+}
 
-UserSetsModal.propTypes = {};
+UserSetsModal.propTypes = {}
 
-export default UserSetsModal;
+export default UserSetsModal

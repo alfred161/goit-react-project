@@ -1,18 +1,14 @@
 import { Link } from 'react-router-dom';
-import css from '../AuthNav/AuthNav.module.css';
+import css from './AuthNav.module.css';
 
 const AuthNav = props => {
   return (
-    <div className={css.authButtons}>
-      <Link to="/signup">
-        <button className={css.signup} type="button">
-          Sign Up
-        </button>
+    <div className={css.btnGroup}>
+      <Link to="/register" className="button btn-primary" type="button">
+        Sign Up
       </Link>
-      <Link to="/login">
-        <button className={css.signin} type="button">
-          Sign In
-        </button>
+      <Link to="/login" className="button btn-secondary" type="button">
+        Sign In
       </Link>
     </div>
   );

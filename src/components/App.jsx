@@ -1,11 +1,11 @@
 import LoginPage from 'pages/LoginPage/LoginPage';
 import MainTransactionsPage from 'pages/MainTransactionsPage/MainTransactionsPage';
+import RegisterPage from 'pages/RegisterPage/RegisterPage';
+import TransactionsHistoryPage from 'pages/TransactionsHistoryPage/TransactionsHistoryPage';
 import WelcomePage from 'pages/WelcomePage/WelcomePage';
 import { Route, Routes } from 'react-router-dom';
-import RegisterPage from '../pages/RegisterPage/RegisterPage';
-import { PrivateRoute } from './PrivateRoute/PrivateRoute';
-import { RestrictedRoute } from './RestrictedRoute/RestrictedRoute';
-import { SharedLayout } from './SharedLayout/SharedLayout';
+import RestrictedRoute from './RestrictedRoute/RestrictedRoute';
+import SharedLayout from './SharedLayout/SharedLayout';
 
 export const App = () => {
   return (
@@ -17,25 +17,38 @@ export const App = () => {
           <Route
             path="/register"
             element={
-              <RestrictedRoute redirectTo="/login" component={RegisterPage} />
+              <RestrictedRoute redirectTo="/" component={<RegisterPage />} />
             }
           />
           <Route
             path="/login"
             element={
-              <RestrictedRoute redirectTo="/contacts" component={LoginPage} />
+              <RestrictedRoute redirectTo="/" component={<LoginPage />} />
             }
           />
-        </Route>
-        <Route
-          path="/transactions"
-          element={
-            <PrivateRoute
-              redirectTo="/login"
-              component={MainTransactionsPage}
+          <Route path="/transactions">
+            <Route
+              path=":transactionsType"
+              element={
+                <RestrictedRoute
+                  redirectTo="/"
+                  component={<MainTransactionsPage />}
+                />
+              }
             />
-          }
-        />
+            <Route path="history">
+              <Route
+                path=":transactionsType"
+                element={
+                  <RestrictedRoute
+                    redirectTo="/"
+                    component={<TransactionsHistoryPage />}
+                  />
+                }
+              />
+            </Route>
+          </Route>
+        </Route>
       </Routes>
     </>
   );

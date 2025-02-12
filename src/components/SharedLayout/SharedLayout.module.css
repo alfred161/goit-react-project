@@ -1,8 +1,23 @@
-.main {
+.section {
+  max-width: 100%;
+  padding: 42px 100px 0;
+}
+
+.list {
   display: flex;
-  flex-direction: row;
-  gap: 50px;
+  justify-content: center;
+  align-items: stretch;
+  gap: 44px;
+}
+
+.listDisplayColumn {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  gap: 44px;
+}
+
+.loggedIn {
+  border-top: 1px solid var(--WHITE-A1);
 }

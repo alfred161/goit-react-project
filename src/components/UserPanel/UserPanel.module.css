@@ -1,0 +1,26 @@
+.userDropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  background-color: var(--BLACK);
+  border: 1px solid var(--WHITE-A1);
+  border-radius: 15px;
+  width: 100%;
+  padding: 18px;
+  margin-top: 10px;
+  color: var(--WHITE-A5);
+}
+
+.userDropdown li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+}
+
+.userDropdown button {
+  background-color: transparent;
+  border: none;
+  color: var(--GREY_TEXT);
+}

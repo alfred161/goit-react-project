@@ -1,8 +1,10 @@
 
 const TransactionsSearchTools = props => {
-  return <div>TransactionsSearchTools</div>;
-};
+  return (
+    <div>TransactionsSearchTools</div>
+  )
+}
 
-TransactionsSearchTools.propTypes = {};
+TransactionsSearchTools.propTypes = {}
 
-export default TransactionsSearchTools;
+export default TransactionsSearchTools

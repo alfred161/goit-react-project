@@ -1,0 +1,29 @@
+.main {
+  flex-basis: calc(((100% - 44px) / 2) - 2.5%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  height: 100%;
+  padding: 20px 0 50px;
+}
+
+.signUp {
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.description {
+  color: var(--GREY);
+  letter-spacing: 0.2px;
+  padding-right: 40px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}

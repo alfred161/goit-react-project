@@ -1,8 +1,10 @@
 
 const CategoriesModal = props => {
-  return <div>CategoriesModal</div>;
-};
+  return (
+    <div>CategoriesModal</div>
+  )
+}
 
-CategoriesModal.propTypes = {};
+CategoriesModal.propTypes = {}
 
-export default CategoriesModal;
+export default CategoriesModal

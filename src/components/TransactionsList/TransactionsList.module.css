@@ -1,0 +1,38 @@
+.table {
+  width: 100%;
+  background-color: var(--GREY-BOX);
+  border-radius: 30px;
+}
+
+.table tr {
+  display: table;
+  padding: 20px 40px;
+}
+
+.searchBox {
+  display: flex;
+  gap: 10px;
+}
+
+.searchInputGroup {
+  display: flex;
+  align-items: center;
+  background-color: var(--BLACK);
+  border-radius: 30px;
+  color: var(--WHITE);
+}
+
+.searchInputGroup input {
+  font-size: 16px;
+  width: 80%;
+  padding: 14px 5px 14px 30px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: var(--WHITE);
+  caret-color: var(--WHITE);
+}
+
+.searchInputGroup svg {
+  cursor: pointer;
+}

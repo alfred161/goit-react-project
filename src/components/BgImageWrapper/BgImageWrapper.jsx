@@ -1,12 +1,13 @@
 import DecorationTab from 'components/DecorationTab/DecorationTab';
-import css from '../BgImageWrapper/BgImageWrapper.module.css';
+import hero from '../../images/bg.png';
+import css from './BgImageWrapper.module.css';
+
 const BgImageWrapper = props => {
   return (
-    <div className={css.imageContainer}>
-      <div className={css.image}>
-        <DecorationTab />
-      </div>
-    </div>
+    <li className={css.main}>
+      <img src={hero} className={css.hero} alt="Hero" />
+      <DecorationTab />
+    </li>
   );
 };
 

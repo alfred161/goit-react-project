@@ -1,14 +1,12 @@
-.header {
-  width: 100%;
-  margin: 0 auto 41px;
+.container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 91px;
-  /* border-bottom: 1px solid wheat; */
+  max-width: 100%;
+  min-height: 90px;
+  padding: 0 100px;
 }
 
-.linkActive {
-  text-decoration: none;
-  font-size: 11px;
+.loggedOut {
+  justify-content: center;
 }

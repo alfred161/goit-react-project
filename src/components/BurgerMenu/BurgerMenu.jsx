@@ -1,8 +1,10 @@
 
 const BurgerMenu = props => {
-  return <div>BurgerMenu</div>;
-};
+  return (
+    <div>BurgerMenu</div>
+  )
+}
 
-BurgerMenu.propTypes = {};
+BurgerMenu.propTypes = {}
 
-export default BurgerMenu;
+export default BurgerMenu

@@ -1,23 +1,47 @@
 import BgImageWrapper from 'components/BgImageWrapper/BgImageWrapper';
 import Header from 'components/Header/Header';
+import Loader from 'components/Loader/Loader';
 import { Suspense } from 'react';
-import { Outlet } from 'react-router-dom';
-import css from '../SharedLayout/SharedLayout.module.css';
+import { Outlet, useLocation } from 'react-router-dom';
+import css from './SharedLayout.module.css';
 
-export const SharedLayout = () => {
-  const isLoggedIn = false;
+const SharedLayout = props => {
+  const location = useLocation();
+  const login = [
+    '/transactions/expense',
+    '/transactions/income',
+    '/transactions/history/expense',
+    '/transactions/history/income',
+  ].includes(location.pathname);
+
+  console.log(`${location.pathname} location`);
+
   return (
     <>
       <Header />
-      <main className={css.main}>
-        {!isLoggedIn && <BgImageWrapper />}
-
-        <div className={css.outlet}>
-          <Suspense fallback={null}>
-            <Outlet />
-          </Suspense>
-        </div>
+      <main className={login ? css.loggedIn : ''}>
+        <section className={css.section}>
+          <ul
+            className={
+              [
+                '/transactions/history/expense',
+                '/transactions/history/income',
+              ].includes(location.pathname)
+                ? css.listDisplayColumn
+                : css.list
+            }
+          >
+            {!login && <BgImageWrapper />}
+            <Suspense fallback={<Loader />}>
+              <Outlet />
+            </Suspense>
+          </ul>
+        </section>
       </main>
     </>
   );
 };
+
+SharedLayout.propTypes = {};
+
+export default SharedLayout;
