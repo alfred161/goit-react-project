@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.7acaea2f.css",
-    "main.js": "/react-homework-template/static/js/main.07d3183d.js",
-    "index.html": "/react-homework-template/index.html",
-    "main.7acaea2f.css.map": "/react-homework-template/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/react-homework-template/static/js/main.07d3183d.js.map"
+    "main.css": "/expense-tracker-project/static/css/main.a20f6ab8.css",
+    "main.js": "/expense-tracker-project/static/js/main.e25bf23b.js",
+    "static/media/bg.png": "/expense-tracker-project/static/media/bg.e2f5ca3bb816904af96f.png",
+    "static/media/user.png": "/expense-tracker-project/static/media/user.a4f09884bcbd2793d162.png",
+    "static/media/SuisseIntl-Medium.ttf": "/expense-tracker-project/static/media/SuisseIntl-Medium.08e55661830e102ea17a.ttf",
+    "static/media/SuisseIntl-Bold.ttf": "/expense-tracker-project/static/media/SuisseIntl-Bold.bf8242ed74ac28455bf4.ttf",
+    "static/media/SuisseIntl-Light.ttf": "/expense-tracker-project/static/media/SuisseIntl-Light.2e62a4bd31af0b2dafab.ttf",
+    "static/media/SuisseIntl-Regular.ttf": "/expense-tracker-project/static/media/SuisseIntl-Regular.d1a6a5b0cd76d384f42f.ttf",
+    "static/media/icons.svg": "/expense-tracker-project/static/media/icons.d375c070d5f6eebce7efa8795a87af1a.svg",
+    "index.html": "/expense-tracker-project/index.html",
+    "main.a20f6ab8.css.map": "/expense-tracker-project/static/css/main.a20f6ab8.css.map",
+    "main.e25bf23b.js.map": "/expense-tracker-project/static/js/main.e25bf23b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.a20f6ab8.css",
+    "static/js/main.e25bf23b.js"
   ]
 }
